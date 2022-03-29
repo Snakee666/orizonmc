@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+
+body {
+	color: #333;
+	font: 100% Lato, Arial, Sans Serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    background: linear-gradient(#db7a0a, #cb720b);
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+
+.logoContainer{
+    margin-top: -20px;
+}
+
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    animation: float2 7s ease-in-out infinite;
+    
+}
+
+@keyframes float2 {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+.allContent{
+    bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -1;
+    position: fixed;
+}
+
+.text{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline;
+    color: white;
+}
+
+
+
+h5{
+    text-decoration: none;
+}
+.text2{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    display: inline;
+    background: -webkit-linear-gradient(#f07400, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textArea{
+    text-align: center;
+}
+
+.cardsRedirect{
+width: 50%;
+}
+
+.cardsRow{
+height: 400px;
+}
+
+.discord{
+    height: 100px;
+    margin:25px;
+    width: 100px;
+}
+.shop{
+    height: 100px;
+    width: 100px;
+    margin:25px;
+}
+.twitter{
+    height: 65px;
+    width: 80px;
+    margin: 40px;
+}
+
+.card-custom{
+    background-image: linear-gradient(to right, rgb(169, 89, 15,0.8), rgb(200, 162, 136,0.8));
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    height: 230px;
+    width: 300px;
+    min-width: 250px;
+    margin-top:30px;
+    box-shadow: 0;
+    transition: box-shadow 1s;
+}
+
+.zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .zoom img {
+    transition: transform .7s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
+
+  .contentCard{
+    display: flex;
+    justify-content: center;
+  }
+
+
+.card-custom:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6), 0 4px 8px rgba(0,0,0,.06);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+
+#rspnsiveimg {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+ @media all and (max-width:768px){
+  #rspnsiveimg {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
+ }
+
+@media all and (max-width: 1205px) {
+    .card-custom{
+        width: 100%;
+        padding-right: var(--bs-gutter-x,2rem);
+        padding-left: var(--bs-gutter-x,2rem);
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+  }
+
+  @media all and (max-width:303px) {
+.text2{
+    font-size: 25px;
+}
+.text{
+    font-size: 25px;
+}
+        
+  }
+
+
